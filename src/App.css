@@ -1,38 +1,55 @@
 .App {
   text-align: center;
+  max-width: 90%;
+  margin: 40px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 36px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-top: 50px;
+  letter-spacing: 0.2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+hr {
+  margin-bottom: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.card .back:hover {
+  box-shadow: 5px 10px #dadada;
+}
+
+.images-grid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: auto;
+  margin-bottom: 20px;
+  max-width: 1100px;
+}
+
+button {
+  background: black;
+  border: 2px solid white;
+  border-radius: 25px;
   color: white;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 0.3em;
+  height: 50px;
+  width: 300px;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background: #ffffff;
+  color: black;
 }
